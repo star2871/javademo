@@ -24,8 +24,6 @@ public class Java004_casting {
 		// 1. 묵시적(자동) 형변환 : 작은 데이터 타입을 큰 데이터 타입으로 변환할때 발생
 		// 2. 명시적(강제) 형변환 : 큰 데이터 타입을 작은 데이터 타입으로 변환할때 발생
 
-		int ko = bNum;   // ko 4바이트  = bNum 1바이트
-		
 		float tNum = (float) 2.6; // 강제 형변환 double => float
 		System.out.println("tNum=" + tNum);
 

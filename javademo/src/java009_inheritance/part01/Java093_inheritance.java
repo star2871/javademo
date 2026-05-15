@@ -26,8 +26,7 @@ package java009_inheritance.part01;
 public class Java093_inheritance {
 
 public static void main(String[] args) {
-	// 포함관계 (has a ~)
-	Father father = new Father();
+	new Father();
 
 	Child child = new Child();
 	System.out.println(child.a);

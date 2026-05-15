@@ -16,15 +16,15 @@ public static void main(String[] args) {
 	//System.out.print("StaticEx.x=%d\n", StaticEx.x);
 	
 	StaticEx se = new StaticEx(); //se.x = 5, se.y=10
-	System.out.printf("se.x=%d, se.y=%d\n", se.x, se.y); 
+	System.out.printf("se.x=%d, se.y=%d\n", se.x, StaticEx.y); 
 	
 	StaticEx ss = new StaticEx(); //ss.x= 5, ss.y=10
-	System.out.printf("ss.x=%d, ss.y=%d\n", ss.x, ss.y);
+	System.out.printf("ss.x=%d, ss.y=%d\n", ss.x, StaticEx.y);
 	
 	se.x = 20;
-	se.y = 30;   //se.x = 20 se.y=30
-	System.out.printf("se.x=%d, se.y=%d\n", se.x, se.y); //20, 30
-	System.out.printf("ss.x=%d, ss.y=%d\n", ss.x, ss.y); //5 30
+	StaticEx.y = 30;   //se.x = 20 se.y=30
+	System.out.printf("se.x=%d, se.y=%d\n", se.x, StaticEx.y); //20, 30
+	System.out.printf("ss.x=%d, ss.y=%d\n", ss.x, StaticEx.y); //5 30
 
 } // end main()
 
